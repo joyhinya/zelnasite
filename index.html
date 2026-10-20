@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LoveLink - Meet Someone Real</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1 class="logo">LoveLink</h1>
+    <ul>
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="browse" class="private">Browse</a></li>
+      <li><a href="#" data-page="matches" class="private">Matches</a></li>
+      <li><a href="#" data-page="join" class="public">Join / Log in</a></li>
+      <li><a href="#" id="logout" class="private">Log out</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="page">
+      <h2>Find someone who gets you</h2>
+      <p>A friendly place for adults 21+ to meet, chat and build something real.</p>
+      <button class="big" data-page="join">Get Started</button>
+    </section>
+
+    <section id="join" class="page hidden">
+      <div class="box">
+        <h2>Log in</h2>
+        <input id="loginEmail" type="email" placeholder="Email">
+        <input id="loginPass" type="password" placeholder="Password">
+        <button id="loginBtn">Log in</button>
+      </div>
+      <div class="box">
+        <h2>Create account</h2>
+        <input id="regName" placeholder="First name">
+        <input id="regEmail" type="email" placeholder="Email">
+        <input id="regPass" type="password" placeholder="Password (6+ characters)">
+        <input id="regAge" type="number" placeholder="Age (21+)">
+        <input id="regCity" placeholder="City">
+        <textarea id="regBio" placeholder="Tell us about yourself"></textarea>
+        <button id="regBtn">Sign up</button>
+      </div>
+    </section>
+
+    <section id="browse" class="page hidden">
+      <h2>Browse people</h2>
+      <input id="cityFilter" placeholder="Filter by city...">
+      <div id="profileList" class="grid"></div>
+    </section>
+
+    <section id="matches" class="page hidden">
+      <h2>Your matches</h2>
+      <div id="matchList" class="grid"></div>
+    </section>
+
+    <p id="message" role="alert"></p>
+  </main>
+
+  <footer>LoveLink &copy; 2026 - student project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
